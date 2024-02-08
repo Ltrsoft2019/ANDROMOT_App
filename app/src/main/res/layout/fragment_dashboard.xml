@@ -1,23 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.Dashboard">
+    tools:context=".fragment.Dashboard"
+    android:orientation="vertical">
+
+<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--        android:id="@+id/bottomNavigationView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="75dp"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:layout_marginTop="655dp"-->
+<!--        app:menu="@menu/button_nevigation_menu" />-->
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="612dp"
-        android:text="hiiiii" />
-
-
+        android:layout_height="wrap_content"
+        android:text="Search Products"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/black"
+        android:gravity="center"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_gravity="bottom"
+        android:layout_marginTop="525dp"
         app:menu="@menu/button_nevigation_menu" />
 
-</FrameLayout>
+
+
+
+
+</LinearLayout>
