@@ -35,5 +35,19 @@
         android:textSize="30dp"
         android:textColor="#18613E"/>
 
+    <ImageView
+        android:layout_width="199dp"
+        android:layout_height="214dp"
+        android:src="@drawable/circle"
+        android:layout_marginTop="-260dp"
+        android:layout_marginLeft="-130dp"/>
+
+    <ImageView
+        android:layout_width="199dp"
+        android:layout_height="214dp"
+        android:src="@drawable/circle"
+        android:layout_marginTop="-500dp"
+        android:layout_marginLeft="350dp"/>
+
 
 </LinearLayout>

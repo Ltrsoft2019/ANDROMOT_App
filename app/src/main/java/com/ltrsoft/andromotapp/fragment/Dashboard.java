@@ -101,7 +101,9 @@ public class Dashboard extends Fragment {
                     getFragmentManager().beginTransaction().replace(R.id.containermain, dashboardFragment).addToBackStack(null).commit();
                 } else if (id == R.id.battery) {
                     Toast.makeText(getContext(), "battery clicked", Toast.LENGTH_SHORT).show();
-                    // Handle battery click
+                    StatusDetail dashboardFragment = new StatusDetail();
+                    getFragmentManager().beginTransaction().replace(R.id.containermain,   dashboardFragment).addToBackStack(null).commit();
+
                 } else if (id == R.id.profile) {
                     Toast.makeText(getContext(), "profile clicked", Toast.LENGTH_SHORT).show();
                     // Handle profile click

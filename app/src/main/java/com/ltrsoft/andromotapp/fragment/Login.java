@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
@@ -13,8 +14,9 @@ import com.ltrsoft.andromotapp.R;
 
 
 public class Login extends Fragment {
-    private Button next;
-    private EditText phoneno;
+    private Button signup;
+    private TextView t1,t2,t3;
+    private EditText edit1,edit2;
 
     public Login() {
 
@@ -26,19 +28,19 @@ public class Login extends Fragment {
 
         View view= inflater.inflate(R.layout.login, container, false);
 
-        next=view.findViewById(R.id.next_btn);
-        phoneno=view.findViewById(R.id.phoneno);
-
-        next.setOnClickListener(new View.OnClickListener() {
+        t1=view.findViewById(R.id.t1);
+        t2=view.findViewById(R.id.t2);
+        t3=view.findViewById(R.id.t3);
+        edit1=view.findViewById(R.id.edit1);
+        edit2=view.findViewById(R.id.edit2);
+        signup=view.findViewById(R.id.btn);
+        signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                getFragmentManager().beginTransaction().replace(R.id.maincontainer,new Dashboard()).commit();
 
-                OTP otp=new OTP();
-                getFragmentManager().beginTransaction().replace(R.id.maincontainer,otp).commit();
             }
         });
-
-
         return view;
-    }
+                }
 }

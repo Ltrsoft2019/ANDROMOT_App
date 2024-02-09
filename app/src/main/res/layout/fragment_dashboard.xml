@@ -63,11 +63,10 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"/>
 
-        <ToggleButton
+        <Switch
             android:id="@+id/toggleButton"
             android:layout_width="50dp"
             android:layout_height="30dp"
-            android:text="ToggleButton"
             android:textSize="10dp"
             android:layout_marginLeft="160dp"
             android:layout_marginTop="30dp"/>

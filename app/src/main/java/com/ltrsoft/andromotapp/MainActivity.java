@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Splash_Screen splashScreen=new Splash_Screen();
-        getSupportFragmentManager().beginTransaction().replace(R.id.maincontainer, splashScreen).commit();
+        setContentView(R.layout.aboutus);
+//        Splash_Screen splashScreen=new Splash_Screen();
+//        getSupportFragmentManager().beginTransaction().replace(R.id.maincontainer, splashScreen).commit();
     }
 }
