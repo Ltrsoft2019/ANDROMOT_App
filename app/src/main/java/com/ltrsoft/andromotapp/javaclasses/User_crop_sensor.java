@@ -1,38 +1,72 @@
 package com.ltrsoft.andromotapp.javaclasses;
 
 public class User_crop_sensor {
-    public User_crop_sensor(String user_crop_sensor_id, String crop_id, String sensor_id) {
-        this.user_crop_sensor_id = user_crop_sensor_id;
-        this.crop_id = crop_id;
-        this.sensor_id = sensor_id;
+
+
+    String id;
+    static String name;
+    String des;
+    String cropimg;
+    String vallue;
+    String created_at;
+
+    public User_crop_sensor(String id, String name, String des, String cropimg, String vallue, String created_at) {
+        this.id = id;
+        this.name = name;
+        this.des = des;
+        this.cropimg = cropimg;
+        this.vallue = vallue;
+        this.created_at = created_at;
     }
 
-    private String user_crop_sensor_id,crop_id,sensor_id;
-
-    public String getUser_crop_sensor_id() {
-        return user_crop_sensor_id;
+    public User_crop_sensor(String stateId, String stateName, String countryId) {
     }
 
-    public void setUser_crop_sensor_id(String user_crop_sensor_id) {
-        this.user_crop_sensor_id = user_crop_sensor_id;
+    public String getId() {
+        return id;
     }
 
-    public String getCrop_id() {
-        return crop_id;
+    public void setId(String id) {
+        this.id = id;
     }
 
-    public void setCrop_id(String crop_id) {
-        this.crop_id = crop_id;
+    public static String getName() {
+        return name;
     }
 
-    public String getSensor_id() {
-        return sensor_id;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setSensor_id(String sensor_id) {
-        this.sensor_id = sensor_id;
+    public String getDes() {
+        return des;
     }
 
-    public User_crop_sensor() {
+    public void setDes(String des) {
+        this.des = des;
+    }
+
+    public String getCropimg() {
+        return cropimg;
+    }
+
+    public void setCropimg(String cropimg) {
+        this.cropimg = cropimg;
+    }
+
+    public String getVallue() {
+        return vallue;
+    }
+
+    public void setVallue(String vallue) {
+        this.vallue = vallue;
+    }
+
+    public String getCreated_at() {
+        return created_at;
+    }
+
+    public void setCreated_at(String created_at) {
+        this.created_at = created_at;
     }
 }

@@ -32,18 +32,18 @@
 
         </FrameLayout>
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:background="@drawable/nav_background"
-            app:layout_anchor="@+id/toolbar"
-            app:layout_anchorGravity="bottom|center"
-            app:title=" Raj User"
-            app:titleTextColor="@color/white" />
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_marginLeft="15dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginRight="15dp"-->
+<!--            android:background="@drawable/nav_background"-->
+<!--            app:layout_anchor="@+id/toolbar"-->
+<!--            app:layout_anchorGravity="bottom|center"-->
+<!--            app:title=" Raj User"-->
+<!--            app:titleTextColor="@color/white" />-->
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

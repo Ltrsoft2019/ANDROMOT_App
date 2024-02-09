@@ -41,7 +41,7 @@ public class NavigationDrawerfragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.navigationfragment, container, false);
 
-        toolbar = v.findViewById(R.id.toolbar);
+       // toolbar = v.findViewById(R.id.toolbar);
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
 
         navigationView = v.findViewById(R.id.navigation);
@@ -62,16 +62,19 @@ public class NavigationDrawerfragment extends Fragment {
                 item.setChecked(true);
 
                 if (id == R.id.home) {
-                  //  DashboardFragment dashboardFragment = new DashboardFragment();
-                   // getFragmentManager().beginTransaction().replace(R.id.containermain, dashboardFragment).addToBackStack(null).commit();
+                    Dashboard dashboardFragment = new Dashboard();
+                    getFragmentManager().beginTransaction().replace(R.id.containermain, dashboardFragment).addToBackStack(null).commit();
                 } else if (id == R.id.contact) {
-                   // getFragmentManager().beginTransaction().replace(R.id.containermain, new Profile()).addToBackStack(null).commit();
+                    getFragmentManager().beginTransaction().replace(R.id.containermain, new Contact_us()).addToBackStack(null).commit();
                 } else if (id == R.id.About) {
-                   // getFragmentManager().beginTransaction().replace(R.id.containermain, new Setting()).addToBackStack(null).commit();
+                    getFragmentManager().beginTransaction().replace(R.id.containermain, new About()).addToBackStack(null).commit();
                 } else if (id==R.id.feedback) {
+                    getFragmentManager().beginTransaction().replace(R.id.containermain, new FeedbackFragment()).addToBackStack(null).commit();
 
                 }
                 else if (id==R.id.help){
+
+                    getFragmentManager().beginTransaction().replace(R.id.containermain, new HelphFragment()).addToBackStack(null).commit();
 
                 }
                 else if (id == R.id.logout) {

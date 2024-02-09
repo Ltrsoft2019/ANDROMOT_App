@@ -34,9 +34,9 @@ public class UserCropSensorAdapter extends RecyclerView.Adapter<UserCropSensorAd
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         User_crop_sensor sensor = list.get(position);
-        holder.t1.setText(sensor.getSensor_id());
-        holder.t2.setText(sensor.getUser_crop_sensor_id());
-        holder.t3.setText(sensor.getCrop_id());
+//        holder.t1.setText(sensor.getSensor_id());
+//        holder.t2.setText(sensor.getUser_crop_sensor_id());
+//        holder.t3.setText(sensor.getCrop_id());
 
     }
 
