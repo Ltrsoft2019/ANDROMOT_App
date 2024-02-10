@@ -41,7 +41,7 @@ public class NavigationDrawerfragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.navigationfragment, container, false);
 
-       // toolbar = v.findViewById(R.id.toolbar);
+        toolbar = v.findViewById(R.id.toolbar);
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
 
         navigationView = v.findViewById(R.id.navigation);

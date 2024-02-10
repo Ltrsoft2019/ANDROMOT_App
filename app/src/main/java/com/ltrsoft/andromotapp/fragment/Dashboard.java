@@ -32,6 +32,8 @@ public class Dashboard extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_dashboard, container, false);
+
+
         recycleview1 =view.findViewById(R.id.recent);
 
 
@@ -88,23 +90,37 @@ public class Dashboard extends Fragment {
 
         bottomNavigationView = view.findViewById(R.id.bottomNavigationView);
 
+
+
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 int id = item.getItemId();
                 if (id == R.id.home) {
-                    // Handle home click
-                } else if (id == R.id.Add) {
+
+                }else if (id == R.id.Add) {
                     Toast.makeText(getContext(), "Add Croped", Toast.LENGTH_SHORT).show();
+                    AddCropFragment addCropFragment = new AddCropFragment();
+                    getFragmentManager().beginTransaction().replace(R.id.maincontainer, addCropFragment).addToBackStack(null).commit();
+                }
 
-                    AddCropFragment dashboardFragment = new AddCropFragment();
-                    getFragmentManager().beginTransaction().replace(R.id.containermain, dashboardFragment).addToBackStack(null).commit();
-                } else if (id == R.id.battery) {
+
+
+                else if (id == R.id.battery) {
                     Toast.makeText(getContext(), "battery clicked", Toast.LENGTH_SHORT).show();
-                    StatusDetail dashboardFragment = new StatusDetail();
-                    getFragmentManager().beginTransaction().replace(R.id.containermain,   dashboardFragment).addToBackStack(null).commit();
+                    StatusDetail statusDetail = new StatusDetail();
+                    getFragmentManager().beginTransaction().replace(R.id.maincontainer,   statusDetail).addToBackStack(null).commit();
 
-                } else if (id == R.id.profile) {
+                }
+
+                else if (id == R.id.profile) {
+                    Profile statusDetail = new Profile
+
+
+
+                            ();
+                    getFragmentManager().beginTransaction().replace(R.id.maincontainer,   statusDetail).addToBackStack(null).commit();
+
                     Toast.makeText(getContext(), "profile clicked", Toast.LENGTH_SHORT).show();
                     // Handle profile click
                 }

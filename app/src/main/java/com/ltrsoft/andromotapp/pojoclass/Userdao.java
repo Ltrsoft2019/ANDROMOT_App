@@ -1,6 +1,7 @@
 package com.ltrsoft.andromotapp.pojoclass;
 
 import android.content.Context;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 
@@ -11,9 +12,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.ltrsoft.andromotapp.R;
 import com.ltrsoft.andromotapp.interfaces.CallBack;
-import com.ltrsoft.andromotapp.javaclasses.User_crop_sensor;
 import com.ltrsoft.andromotapp.javaclasses.User_detail;
 
 import org.json.JSONArray;
@@ -30,7 +29,7 @@ public class Userdao {
     public static final String updateurl="";
     public static final String deleteurl="";
     public  static  final String getallurl="";
-    public static  final String getoneurl="";
+    public static  final String getoneurl="https://andromot.ltr-soft.com/public/user_detail/read_user_id.php";
 
     public User_detail userDetail ;
 
@@ -146,7 +145,7 @@ private ArrayList<User_detail> list = new ArrayList<>();
         requestQueue.add(stringRequest);
         }
 
-    public void getoneuserdetail( String user_id, Context context , CallBack callBack) {
+    public void getoneuserdetail( Context context , CallBack callBack) {
 
         StringRequest stringRequest = new StringRequest(Request.Method.POST, getoneurl, new Response.Listener<String>() {
             @Override
@@ -172,6 +171,7 @@ private ArrayList<User_detail> list = new ArrayList<>();
                         String CITY = jsonObject.getString("user_city");
                         String COUNTRY = jsonObject.getString("user_country");
                         String DISTRICT = jsonObject.getString("user_district");
+                        Toast.makeText(context, ""+USER_FNAME.toString(), Toast.LENGTH_SHORT).show();
 
                         list.add(new User_detail());
                     }
@@ -190,7 +190,7 @@ private ArrayList<User_detail> list = new ArrayList<>();
             @Override
             protected Map<String, String> getParams() throws AuthFailureError {
                 HashMap <String , String>map =new HashMap<>();
-                map.put("user_id",user_id);
+                map.put("user_id","7");
 
                 return map;
             }

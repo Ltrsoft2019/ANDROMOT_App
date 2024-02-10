@@ -1,36 +1,45 @@
 package com.ltrsoft.andromotapp.javaclasses;
 
 public class User_pump_status {
-    public User_pump_status(String user_p_status_id, String user_id, String pump_status) {
-        this.user_p_status_id = user_p_status_id;
-        this.user_id = user_id;
-        this.pump_status = pump_status;
+
+    String fname,pumpstatus,phone,address;
+
+    public User_pump_status(String fname, String pumpstatus, String phone, String address) {
+        this.fname = fname;
+        this.pumpstatus = pumpstatus;
+        this.phone = phone;
+        this.address = address;
     }
 
-    private String user_p_status_id,user_id,pump_status;
-
-    public String getUser_p_status_id() {
-        return user_p_status_id;
+    public String getFname() {
+        return fname;
     }
 
-    public void setUser_p_status_id(String user_p_status_id) {
-        this.user_p_status_id = user_p_status_id;
+    public void setFname(String fname) {
+        this.fname = fname;
     }
 
-    public String getUser_id() {
-        return user_id;
+    public String getPumpstatus() {
+        return pumpstatus;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
+    public void setPumpstatus(String pumpstatus) {
+        this.pumpstatus = pumpstatus;
     }
 
-    public String getPump_status() {
-        return pump_status;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setPump_status(String pump_status) {
-        this.pump_status = pump_status;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }

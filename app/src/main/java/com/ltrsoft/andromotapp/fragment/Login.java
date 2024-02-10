@@ -37,7 +37,7 @@ public class Login extends Fragment {
         signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getFragmentManager().beginTransaction().replace(R.id.maincontainer,new Dashboard()).commit();
+                getFragmentManager().beginTransaction().replace(R.id.maincontainer,new NavigationDrawerfragment()).commit();
 
             }
         });

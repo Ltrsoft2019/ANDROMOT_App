@@ -35,9 +35,9 @@ public class UserPumpStatusAdapter extends RecyclerView.Adapter<UserPumpStatusAd
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         User_pump_status status = list.get(position);
-        holder.t1.setText(status.getPump_status());
-        holder.t2.setText(status.getUser_p_status_id());
-        holder.t3.setText(status.getUser_id());
+        holder.t1.setText(status.getFname());
+        holder.t2.setText(status.getAddress());
+        holder.t3.setText(status.getPumpstatus());
 
 
     }

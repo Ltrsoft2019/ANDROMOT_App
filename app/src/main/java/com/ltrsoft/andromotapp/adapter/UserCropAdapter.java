@@ -1,20 +1,18 @@
 package com.ltrsoft.andromotapp.adapter;
 
-import android.os.Bundle;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.Button;
+
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ltrsoft.andromotapp.R;
@@ -75,9 +73,9 @@ public class UserCropAdapter extends RecyclerView.Adapter<UserCropAdapter.ViewHo
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            cropId = itemView.findViewById(R.id.des);  // Replac with the actual TextView ID
-            sensorId = itemView.findViewById(R.id.name);  // Replace with the actual TextView ID
-             userCropCard = itemView.findViewById(R.id.cardview);  // Replace with the actual CardView ID
+            cropId = itemView.findViewById(R.id.des);
+            sensorId = itemView.findViewById(R.id.name);
+             userCropCard = itemView.findViewById(R.id.cardview);  
         }
     }
 }
