@@ -5,11 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.ltrsoft.andromotapp.fragment.Splash_Screen;
-
-
-import java.util.ArrayList;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
